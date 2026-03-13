@@ -6,6 +6,13 @@
   border-bottom: 1px solid color-mix(in srgb, var(--ink) 25%, transparent);
   z-index: 10;
   transition: background 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+[data-include="partials/header.html"] {
+  position: sticky;
+  top: 0;
+  z-index: 11;
 }
 
 .site-header.scrolled {
