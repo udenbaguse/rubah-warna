@@ -16,6 +16,10 @@
   --brand-grad-1: #e07a5f;
   --brand-grad-2: #f2cc8f;
   --brand-grad-3: #81b29a;
+  --brand-text-1: #0b5fff;
+  --brand-text-2: #00a86b;
+  --brand-text-3: #ff8a00;
+  --brand-text-4: #d7263d;
   --hero-grad-1: #1d1f24;
   --hero-grad-2: #e07a5f;
   --hero-grad-3: #f2cc8f;
@@ -42,6 +46,10 @@ html[data-theme="dark"] {
   --brand-grad-1: #f08b72;
   --brand-grad-2: #ffd59b;
   --brand-grad-3: #9bd3bb;
+  --brand-text-1: #5bff8a;
+  --brand-text-2: #7db5ff;
+  --brand-text-3: #fff36a;
+  --brand-text-4: #ff8b8b;
   --hero-grad-1: #ffffff;
   --hero-grad-2: #f2cc8f;
   --hero-grad-3: #81b29a;
