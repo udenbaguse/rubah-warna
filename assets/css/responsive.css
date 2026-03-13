@@ -1,0 +1,10 @@
+@media (max-width: 640px) {
+  .brand-text {
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-stats {
+    gap: 18px;
+  }
+}

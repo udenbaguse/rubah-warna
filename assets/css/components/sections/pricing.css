@@ -1,0 +1,40 @@
+.pricing {
+  .pricing-grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .price-card {
+    background: var(--card);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    position: relative;
+
+    &.highlight {
+      border: 2px solid var(--clay);
+      transform: translateY(-8px);
+    }.price {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 10px 0 20px;
+
+      span {
+        font-size: 1rem;
+        color: rgba(29, 31, 36, 0.6);
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+

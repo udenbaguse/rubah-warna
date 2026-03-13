@@ -1,0 +1,52 @@
+.contact {
+  background: linear-gradient(120deg, var(--bg-3), var(--bg-1));
+}
+
+.contact-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.contact-info {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.contact-info span {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(29, 31, 36, 0.7);
+}
+
+.contact-form {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font: inherit;
+  background: var(--card);
+  color: var(--ink);
+}
+
+.form-note {
+  font-size: 0.75rem;
+  color: rgba(29, 31, 36, 0.6);
+}
