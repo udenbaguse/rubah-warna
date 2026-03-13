@@ -1,0 +1,19 @@
+#layanan .card h3 {
+  font-family: var(--font-soft);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+#layanan .section-head h2 {
+  font-family: var(--font-soft);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+#layanan .card p {
+  font-family: var(--font-soft);
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 36ch;
+}

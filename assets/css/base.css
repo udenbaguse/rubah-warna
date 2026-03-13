@@ -19,6 +19,9 @@
   --hero-grad-1: #1d1f24;
   --hero-grad-2: #e07a5f;
   --hero-grad-3: #f2cc8f;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-display: "IBM Plex Sans", sans-serif;
+  --font-soft: "IBM Plex Sans", sans-serif;
 }
 
 html[data-theme="dark"] {
@@ -52,7 +55,7 @@ html[data-theme="dark"] {
 
 body {
   margin: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-body);
   background: radial-gradient(circle at top, var(--bg-1), var(--bg-2) 45%, var(--bg-3) 100%);
   color: var(--ink);
   line-height: 1.6;
@@ -62,9 +65,33 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--font-display);
   margin: 0 0 12px;
   line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 2vw + 1.8rem, 3.4rem);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 1.4vw + 1.4rem, 2.6rem);
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 0.6vw + 1.05rem, 1.5rem);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  font-weight: 600;
 }
 
 a {
@@ -95,6 +122,12 @@ a {
 .section-head {
   max-width: 640px;
   margin-bottom: 40px;
+}
+
+.section-head h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 
 .process {

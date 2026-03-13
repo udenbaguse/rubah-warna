@@ -13,4 +13,15 @@
   padding: 26px;
   border-radius: 20px;
   box-shadow: var(--shadow);
+  font-family: var(--font-soft);
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
+
+.testimonial span {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
 }

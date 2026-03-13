@@ -40,22 +40,37 @@
 }
 
 .brand-text {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   letter-spacing: 0.06em;
   line-height: 1;
-  background: linear-gradient(
-    120deg,
-    var(--brand-grad-1),
-    var(--brand-grad-2),
-    var(--brand-grad-3)
-  );
-  background-size: 200% 200%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: brandGlow 6s ease infinite;
+  display: inline-block;
+  color: var(--clay);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .brand-text {
+    background: linear-gradient(
+      120deg,
+      var(--brand-grad-1),
+      var(--brand-grad-2),
+      var(--brand-grad-3)
+    );
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: brandGlow 6s ease infinite;
+  }
+
+  html[data-theme="light"] .brand-text {
+    background: none;
+    color: #c94e36;
+    -webkit-text-fill-color: currentColor;
+    text-shadow: 0 2px 8px rgba(61, 64, 91, 0.12);
+  }
 }
 
 .brand-mark {
@@ -71,6 +86,12 @@
   overflow: hidden;
 }
 
+html[data-theme="light"] .brand-mark {
+  background: #ffffff;
+  border-color: rgba(29, 31, 36, 0.2);
+  box-shadow: 0 6px 16px rgba(29, 31, 36, 0.12);
+}
+
 html[data-theme="dark"] .brand-mark {
   background: #d9d9d9;
   border-color: rgba(255, 255, 255, 0.45);
@@ -83,6 +104,10 @@ html[data-theme="dark"] .brand-mark {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+html[data-theme="light"] .brand-logo {
+  filter: saturate(1.12) contrast(1.08) drop-shadow(0 2px 4px rgba(15, 23, 42, 0.25));
 }
 
 .nav-actions {
