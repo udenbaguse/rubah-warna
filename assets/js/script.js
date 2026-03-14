@@ -28,7 +28,15 @@ const initUI = () => {
     });
 
     navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
+        if (href && href.startsWith("#")) {
+          const target = document.querySelector(href);
+          if (target) {
+            event.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
         navLinks.classList.remove("open");
         toggle.classList.remove("open");
         toggle.setAttribute("aria-expanded", "false");
