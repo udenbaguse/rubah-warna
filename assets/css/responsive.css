@@ -1,17 +1,67 @@
-@media (max-width: 860px) {
-  .hero-stats {
+@media (max-width: 1024px) {
+  .hero .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero .hero-card {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero .hero-copy {
+    text-align: center;
+  }
+
+  .hero .hero-copy .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .hero-actions {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .hero .hero-stats {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .hero .hero-stats > div {
+    min-width: 0;
+    width: min(200px, 100%);
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  .hero .hero-stats h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .hero .hero-stats p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero .hero-stats {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px 18px;
     align-items: stretch;
   }
 
-  .hero-stats > div {
+  .hero .hero-stats > div {
     min-width: 0;
     margin: 0 auto;
   }
 
-  .hero-stats > div:last-child {
+  .hero .hero-stats > div:last-child {
     grid-column: 1 / -1;
     justify-self: center;
     width: min(260px, 100%);
