@@ -12,6 +12,6 @@
 .copyright {
   text-align: center;
   font-size: 0.8rem;
-  color: rgba(29, 31, 36, 0.6);
+  color: color-mix(in srgb, var(--ink) 65%, transparent);
   margin-top: 30px;
 }
