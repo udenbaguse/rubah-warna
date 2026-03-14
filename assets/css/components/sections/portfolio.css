@@ -9,6 +9,13 @@
   border-radius: 22px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--brand-grad-2) 35%, var(--border));
+  box-shadow: 0 24px 50px rgba(29, 31, 36, 0.18);
 }
 
 .portfolio-image {
