@@ -24,37 +24,6 @@
   cursor: pointer;
 }
 
-.contact-form {
-  background: var(--card);
-  padding: 28px;
-  border-radius: 22px;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 16px;
-}
-
-.contact-form label {
-  display: grid;
-  gap: 6px;
-  font-weight: 600;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  font: inherit;
-  background: var(--card);
-  color: var(--ink);
-}
-
-.form-note {
-  font-size: 0.75rem;
-  color: color-mix(in srgb, var(--ink) 60%, transparent);
-}
-
 .contact-map {
   background: var(--card);
   padding: 18px;
