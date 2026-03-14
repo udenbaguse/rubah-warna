@@ -1,0 +1,20 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f2ea" />
+      <stop offset="100%" stop-color="#f0e6d6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <g stroke="#c7b9a8" stroke-width="6" fill="none" opacity="0.7">
+    <path d="M 80 160 C 260 220, 420 180, 600 260" />
+    <path d="M 140 520 C 320 460, 520 520, 720 460" />
+    <path d="M 760 220 C 900 300, 1040 260, 1120 340" />
+  </g>
+  <g transform="translate(600 360)">
+    <circle cx="0" cy="0" r="78" fill="#e07a5f" opacity="0.22" />
+    <path d="M 0 -90 C 52 -90 90 -52 90 0 C 90 68 0 160 0 160 C 0 160 -90 68 -90 0 C -90 -52 -52 -90 0 -90 Z" fill="#e07a5f" />
+    <circle cx="0" cy="-18" r="34" fill="#ffffff" />
+  </g>
+  <text x="60" y="740" font-family="IBM Plex Sans, Arial, sans-serif" font-size="32" fill="#3d405b">Peta Lokasi Rubah Warna</text>
+</svg>

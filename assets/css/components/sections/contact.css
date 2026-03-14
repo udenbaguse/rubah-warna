@@ -17,7 +17,7 @@
 .contact-info span {
   display: block;
   font-size: 0.8rem;
-  color: rgba(29, 31, 36, 0.7);
+  color: color-mix(in srgb, var(--ink) 70%, transparent);
 }
 
 .contact-form {
@@ -48,5 +48,27 @@
 
 .form-note {
   font-size: 0.75rem;
-  color: rgba(29, 31, 36, 0.6);
+  color: color-mix(in srgb, var(--ink) 60%, transparent);
+}
+
+.contact-map {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+
+.contact-map img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.map-note {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--ink) 70%, transparent);
 }
