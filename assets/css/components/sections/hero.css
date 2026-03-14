@@ -79,7 +79,7 @@
 
     div {
       background: color-mix(in srgb, var(--card) 80%, transparent);
-      border: 1px solid var(--border);
+      border: 3px solid var(--border);
       padding: 10px 14px;
       border-radius: 16px;
       min-width: 140px;
