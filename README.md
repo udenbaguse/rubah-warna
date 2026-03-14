@@ -1,24 +1,24 @@
-# 🌈 Rubah Warna - Website Pengecatan Modern & Profesional
+# 🌈 Rubah Warna - Modern & Professional Painting Website
 
 [![Netlify](https://img.shields.io/badge/Deploy-Netlify-green)](https://app.netlify.com/)
 [![GitHub](https://img.shields.io/badge/Source-GitHub-blue?logo=github)](https://github.com/)
 [![Vanilla](https://img.shields.io/badge/Tech-Vanilla%20HTML/CSS/JS-orange)](https://developer.mozilla.org/)
 
-## 🎨 Tentang Rubah Warna
+## 🎨 About Rubah Warna
 
-**Rubah Warna** adalah layanan pengecatan rumah, kantor, dan properti komersial dengan hasil **rapi, cepat, tahan lama**. Website ini dibuat dengan desain modern, **responsive** (mobile-first), **dark/light theme**, animasi smooth, dan performa tinggi (no framework berat).
+**Rubah Warna** is a professional painting service for homes, offices, and commercial properties with **neat, fast, and durable results**. This website features modern design, **responsive** (mobile-first), **dark/light theme**, smooth animations, and high performance (no heavy frameworks).
 
-### ✨ Fitur Utama
+### ✨ Key Features
 
-- ✅ **Modular Structure**: HTML partials (hero, services, portfolio, dll.) dimuat via JS.
-- ✅ **Theme Toggle**: Ganti light/dark mode dengan 1 klik.
+- ✅ **Modular Structure**: HTML partials (hero, services, portfolio, etc.) loaded via JS.
+- ✅ **Theme Toggle**: Switch light/dark mode with 1 click.
 - ✅ **Animations**: Scroll-triggered reveals + orbit background.
 - ✅ **Responsive Design**: CSS Grid/Flexbox + mobile breakpoints.
 - ✅ **Performance**: Vanilla JS ES modules, no bloat.
 - ✅ **Components**: Navbar sticky, WhatsApp fallback, section observers.
 
 ![Hero Section Preview](assets/images/demo.png)
-_(Screenshot hero section dengan efek orbit dinamis)_
+_(Screenshot of hero section)_
 
 ## 🛠 Tech Stack
 
@@ -30,59 +30,61 @@ HTML5 | CSS3 (Modular Imports) | Vanilla JavaScript (ES Modules)
 └── Observers (IntersectionObserver API)
 ```
 
-Struktur folder:
+## 📁 Project Structure
 
 ```
 rubah-warna/
-├── index.html          # Main entry
+├── .gitignore
+├── index.html          # Main entry point
+├── LICENSE
+├── README.md           # This file!
 ├── assets/
-│   ├── css/           # Modular CSS (base, components, responsive)
-│   ├── js/            # ES modules (main.js, components/, observers/)
+│   ├── css/           # Modular CSS
+│   ├── js/            # ES modules
 │   └── images/
-├── partials/          # HTML snippets (hero.html, navbar.html, dll.)
-└── README.md          # Ini kamu!
+├── partials/          # HTML snippets
 ```
 
-## 🚀 Cara Menjalankan (Local Development)
+## 🚀 How to Run (Local Development)
 
-1. **Clone/Download** repo ini.
-2. **Buka di Browser**:
+1. **Clone/Download** this repo.
+2. **Open in Browser**:
    ```bash
-   # Windows (dari folder proyek)
+   # Windows (from project folder)
    start index.html
    ```
-   Atau drag `index.html` ke browser.
-3. **Live Server** (opsional, install via npm):
+   Or drag `index.html` to your browser.
+3. **Live Server** (optional):
    ```bash
    npx live-server
    ```
 
-Website langsung jalan **tanpa install apa-apa**! Test di mobile juga langsung responsive.
+Website runs **zero dependencies**! Fully responsive on all devices.
 
-## 📱 Demo Fitur
+## 📱 Feature Demo
 
-- **Scroll ke sections**: Lihat animations reveal.
-- **Klik sun/moon icon**: Toggle theme.
-- **Hover cards**: Efek interactive di portfolio/services.
+- **Scroll sections**: Watch smooth reveal animations.
+- **Sun/Moon icon**: Toggle dark/light theme.
+- **Hover cards**: Interactive portfolio/services effects.
 
-## 🤝 Kontribusi
+## 🤝 Contributing
 
-1. Fork repo.
-2. Buat branch `feature/nama-fitur`.
+1. Fork this repo.
+2. Create branch `feature/your-feature`.
 3. Commit & PR.
-4. Ideas: Tambah form kalkulator quote, PWA support, atau integrasi GSAP.
+4. Ideas: Quote calculator, PWA, GSAP animations.
 
-## 📄 Lisensi
+## 📄 License
 
 [MIT License](LICENSE) - Free to use & modify!
 
-## 👨‍💼 Kontak
+## 👨‍💼 Contact
 
-- WhatsApp: [Klik untuk chat](https://wa.me/628xxxxxx)
+- WhatsApp: [Chat Now](https://wa.me/628xxxxxx)
 - Email: info@rubahwarna.com
 
-**Dibuat dengan ❤️ untuk bisnis lokal Indonesia. Mari rubah warna rumahmu!** 🏠✨
+**Made with ❤️ for Indonesian businesses. Transform your space today!** 🏠✨
 
 ---
 
-_Terakhir update: Desember 2023_
+_Last updated: March 2026_
