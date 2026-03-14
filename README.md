@@ -74,6 +74,7 @@ Website runs **zero dependencies**! Fully responsive on all devices.
 3. Commit & PR.
 4. Ideas: Quote calculator, PWA, GSAP animations.
 
+
 ## 📄 License
 
 [MIT License](LICENSE) - Free to use & modify!
@@ -88,3 +89,4 @@ Website runs **zero dependencies**! Fully responsive on all devices.
 ---
 
 _Last updated: March 2026_
+
