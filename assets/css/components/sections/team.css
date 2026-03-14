@@ -83,31 +83,28 @@
   color: var(--clay);
 }
 
-.team-btn {
+.team .team-btn {
   margin-top: 6px;
   align-self: flex-start;
   padding: 11px 22px;
   border-radius: 999px;
-  background:
-    linear-gradient(var(--card), var(--card)) padding-box,
-    linear-gradient(120deg, var(--brand-grad-1), var(--brand-grad-2), var(--brand-grad-3)) border-box;
-  border: 2px solid transparent;
-  color: var(--ink);
+  background: var(--team-btn-bg);
+  border: 2px solid var(--team-btn-border);
+  color: var(--team-btn-text);
   font-weight: 600;
   letter-spacing: 0.02em;
   box-shadow: 0 10px 20px rgba(29, 31, 36, 0.12);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-.team-btn:hover {
+.team .team-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 28px rgba(29, 31, 36, 0.18);
-  background:
-    linear-gradient(120deg, rgba(224, 122, 95, 0.18), rgba(242, 204, 143, 0.18)) padding-box,
-    linear-gradient(120deg, var(--brand-grad-1), var(--brand-grad-2), var(--brand-grad-3)) border-box;
+  background: var(--team-btn-bg-hover);
+  border-color: color-mix(in srgb, var(--team-btn-border) 70%, var(--ink));
 }
 
-.team-btn:focus-visible {
+.team .team-btn:focus-visible {
   outline: 2px solid var(--clay);
   outline-offset: 3px;
 }
@@ -127,7 +124,7 @@
     justify-content: center;
   }
 
-  .team-btn {
+  .team .team-btn {
     align-self: center;
   }
 }

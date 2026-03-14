@@ -23,6 +23,10 @@
   --hero-grad-1: #1d1f24;
   --hero-grad-2: #e07a5f;
   --hero-grad-3: #f2cc8f;
+  --team-btn-bg: var(--clay);
+  --team-btn-bg-hover: color-mix(in srgb, var(--clay) 85%, var(--forest));
+  --team-btn-text: #ffffff;
+  --team-btn-border: color-mix(in srgb, var(--clay) 70%, transparent);
   --font-body: "IBM Plex Sans", sans-serif;
   --font-display: "IBM Plex Sans", sans-serif;
   --font-soft: "IBM Plex Sans", sans-serif;
@@ -53,6 +57,10 @@ html[data-theme="dark"] {
   --hero-grad-1: #ffffff;
   --hero-grad-2: #f2cc8f;
   --hero-grad-3: #81b29a;
+  --team-btn-bg: var(--cream);
+  --team-btn-bg-hover: color-mix(in srgb, var(--cream) 80%, var(--sage));
+  --team-btn-text: #1d1f24;
+  --team-btn-border: color-mix(in srgb, var(--cream) 70%, transparent);
 }
 
 *,
