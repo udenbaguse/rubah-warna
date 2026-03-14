@@ -70,7 +70,7 @@ Website langsung jalan **tanpa install apa-apa**! Test di mobile juga langsung r
 1. Fork repo.
 2. Buat branch `feature/nama-fitur`.
 3. Commit & PR.
-4. Ideas: Tambah form kalkulator quote, PWA support, atau integrasi GSAP.
+4. Ideas: Tambah quote, PWA support, atau integrasi GSAP.
 
 ## 📄 Lisensi
 
@@ -85,4 +85,4 @@ Website langsung jalan **tanpa install apa-apa**! Test di mobile juga langsung r
 
 ---
 
-_Terakhir update: Desember 2023_
+_Terakhir update: Maret 2026_
