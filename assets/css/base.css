@@ -156,6 +156,28 @@ a {
   gap: 32px;
 }
 
+.process-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.process-visual {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.process-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
 .steps {
   display: grid;
   gap: 18px;

@@ -9,6 +9,10 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.footer i {
+  cursor: pointer;
+}
+
 .copyright {
   text-align: center;
   font-size: 0.8rem;
