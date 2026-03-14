@@ -176,9 +176,8 @@ a {
 }
 
 .process .process-text {
-  background: var(--card);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
+  background: transparent;
+  box-shadow: none;
   padding: 32px;
   transition: transform 0.3s ease;
 }
@@ -239,6 +238,28 @@ a {
 .step span {
   font-weight: 700;
   color: var(--clay);
+}
+
+.change-size-color {
+  color: var(--forest);
+  transition: font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.change-size-color:hover {
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.change-size-color h4,
+.change-size-color p {
+  color: var(--forest);
+  transition: font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.change-size-color:hover h4,
+.change-size-color:hover p {
+  font-size: 1.15rem;
+  color: var(--ink);
 }
 
 
