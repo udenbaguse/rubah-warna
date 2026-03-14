@@ -157,26 +157,19 @@ a {
 }
 
 .process-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.process-visual {
-  background: var(--card);
-  padding: 14px;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
+.process-text {
+  display: grid;
+  gap: 12px;
 }
 
-.process-visual img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 16px;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-}
 
 .steps {
   display: grid;

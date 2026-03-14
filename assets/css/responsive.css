@@ -48,7 +48,24 @@
   }
 }
 
+@media (min-width: 721px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 721px) {
+  .process-copy {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+  }
+}
+
 @media (max-width: 720px) {
+  .process-copy {
+    grid-template-columns: 1fr;
+  }
+
   .process-visual {
     display: none;
   }
