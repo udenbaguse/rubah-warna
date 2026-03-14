@@ -116,6 +116,10 @@ a {
   cursor: pointer;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .container {
   width: min(1140px, 90%);
   margin: 0 auto;
