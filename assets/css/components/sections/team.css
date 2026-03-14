@@ -48,7 +48,9 @@
 
 .team-body {
   display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
   gap: 12px;
+  height: 100%;
 }
 
 .team-body h3 {
@@ -64,6 +66,7 @@
 .team-desc {
   margin: 0;
   color: color-mix(in srgb, var(--ink) 75%, transparent);
+  min-height: 3.2em;
 }
 
 .team-meta {
@@ -71,6 +74,7 @@
   gap: 6px;
   font-size: 0.95rem;
   color: color-mix(in srgb, var(--ink) 70%, transparent);
+  min-height: 2.2em;
 }
 
 .team-meta span {
