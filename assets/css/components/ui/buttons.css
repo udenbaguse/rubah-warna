@@ -4,12 +4,10 @@
   justify-content: center;
   padding: 12px 24px;
   border-radius: 999px;
-  background: linear-gradient(
-    120deg,
-    var(--brand-grad-1),
-    var(--brand-grad-2),
-    var(--brand-grad-3)
-  );
+  background: linear-gradient(120deg,
+      var(--brand-grad-1),
+      var(--brand-grad-2),
+      var(--brand-grad-3));
   color: #1b1f24;
   font-weight: 700;
   border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);

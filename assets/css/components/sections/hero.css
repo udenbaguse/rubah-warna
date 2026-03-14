@@ -44,12 +44,10 @@
       line-height: 1.05;
       letter-spacing: -0.02em;
       font-weight: 700;
-      background: linear-gradient(
-        135deg,
-        var(--hero-grad-1),
-        var(--hero-grad-2) 45%,
-        var(--hero-grad-3) 100%
-      );
+      background: linear-gradient(135deg,
+          var(--hero-grad-1),
+          var(--hero-grad-2) 45%,
+          var(--hero-grad-3) 100%);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -93,11 +91,9 @@
     .btn-ghost {
       position: relative;
       border: 1px solid color-mix(in srgb, var(--ink) 45%, transparent);
-      background: linear-gradient(
-        135deg,
-        color-mix(in srgb, var(--card) 88%, transparent),
-        color-mix(in srgb, #3dd198 22%, transparent)
-      );
+      background: linear-gradient(135deg,
+          color-mix(in srgb, var(--card) 88%, transparent),
+          color-mix(in srgb, #3dd198 22%, transparent));
       box-shadow:
         inset 0 0 0 1px color-mix(in srgb, var(--ink) 18%, transparent),
         0 12px 24px rgba(29, 31, 36, 0.12);
@@ -109,11 +105,9 @@
       content: "";
       position: absolute;
       inset: -1px;
-      background: linear-gradient(
-        120deg,
-        color-mix(in srgb, var(--hero-grad-1) 65%, transparent),
-        color-mix(in srgb, var(--hero-grad-3) 65%, transparent)
-      );
+      background: linear-gradient(120deg,
+          color-mix(in srgb, var(--hero-grad-1) 65%, transparent),
+          color-mix(in srgb, var(--hero-grad-3) 65%, transparent));
       opacity: 0.25;
       pointer-events: none;
     }
@@ -233,4 +227,3 @@
   color: var(--forest);
   margin-bottom: 12px;
 }
-
