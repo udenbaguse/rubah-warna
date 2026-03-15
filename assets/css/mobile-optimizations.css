@@ -37,18 +37,22 @@ section {
 
 /* Reduce backdrop-filter on mobile */
 .site-header {
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  background: var(--bg-2) !important;
-  /* Smooth transition for theme change */
-  transition: background-color 0.3s ease, background 0.3s ease !important;
+  \n backdrop-filter: blur(12px) !important;
+  \n -webkit-backdrop-filter: blur(12px) !important;
+  \n background: var(--bg-2) !important;
+  \n
+  /* Smooth theme transition */
+  \n transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  \n
 }
 
 .nav-links {
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  /* Smooth transition for theme change */
-  transition: background-color 0.3s ease, background 0.3s ease !important;
+  \n backdrop-filter: blur(12px) !important;
+  \n -webkit-backdrop-filter: blur(12px) !important;
+  \n
+  /* Smooth theme transition */
+  \n transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  \n
 }
 
 /* Reduce shadow complexity on mobile */

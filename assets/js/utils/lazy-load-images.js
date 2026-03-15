@@ -39,7 +39,7 @@ export const initLazyLoadImages = () => {
       });
     },
     {
-      rootMargin: "200px", // Start loading 200px before visible
+      rootMargin: "200px",
       threshold: 0.01,
     },
   );
