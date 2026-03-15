@@ -25,18 +25,15 @@
 }
 
 .img-1 {
-  background-image: linear-gradient(120deg, rgba(224, 122, 95, 0.5), rgba(61, 64, 91, 0.3)),
-    url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80");
+  background-image: url("../../../images/projects/project-1.png");
 }
 
 .img-2 {
-  background-image: linear-gradient(120deg, rgba(129, 178, 154, 0.5), rgba(61, 64, 91, 0.3)),
-    url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=80");
+  background-image: url("../../../images/projects/project-2.png");
 }
 
 .img-3 {
-  background-image: linear-gradient(120deg, rgba(242, 204, 143, 0.5), rgba(61, 64, 91, 0.3)),
-    url("https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=900&q=80");
+  background-image: url("../../../images/projects/project-3.png");
 }
 
 .portfolio-card div {

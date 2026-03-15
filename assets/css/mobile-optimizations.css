@@ -372,22 +372,16 @@ html {
 
 /* Defer non-critical images */
 .portfolio-image {
-  background-image: none !important;
-  min-height: 140px;
+  \n min-height: 140px;
+  \n
 }
 
 /* Show placeholder background */
-.img-1 {
-  background: linear-gradient(135deg, var(--bg-2), var(--bg-3)) !important;
-}
+/* .img-1 placeholder removed */
 
-.img-2 {
-  background: linear-gradient(135deg, var(--bg-3), var(--bg-2)) !important;
-}
+/* .img-2 placeholder removed */
 
-.img-3 {
-  background: linear-gradient(135deg, var(--bg-2), var(--bg-1)) !important;
-}
+/* .img-3 placeholder removed */
 
 /* ============================================
    FONT OPTIMIZATIONS
