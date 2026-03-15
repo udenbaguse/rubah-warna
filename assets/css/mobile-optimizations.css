@@ -3,16 +3,52 @@
    Hanya diterapkan di layar ≤720px
    ============================================ */
 
+/* ============================================
+   THEME TOGGLE SMOOTH TRANSITION
+   ============================================ */
+
+/* Ensure smooth theme transition on mobile */
+html {
+  color-scheme: light dark;
+}
+
+/* Smooth transition for theme change - limited scope for better performance */
+.site-header,
+.nav-links {
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease !important;
+}
+
+/* Theme toggle button transition */
+.theme-toggle {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+  touch-action: manipulation;
+  /* Better touch response */
+  -webkit-tap-highlight-color: transparent;
+  /* Remove tap highlight on mobile */
+}
+
+/* Ensure all elements using CSS variables transition smoothly */
+body,
+.container,
+main,
+section {
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
 /* Reduce backdrop-filter on mobile */
 .site-header {
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
   background: var(--bg-2) !important;
+  /* Smooth transition for theme change */
+  transition: background-color 0.3s ease, background 0.3s ease !important;
 }
 
 .nav-links {
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
+  /* Smooth transition for theme change */
+  transition: background-color 0.3s ease, background 0.3s ease !important;
 }
 
 /* Reduce shadow complexity on mobile */
