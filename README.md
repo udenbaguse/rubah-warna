@@ -14,7 +14,8 @@
 - ✅ **Theme Toggle**: Switch light/dark mode with 1 click.
 - ✅ **Animations**: Scroll-triggered reveals + orbit background.
 - ✅ **Responsive Design**: CSS Grid/Flexbox + mobile breakpoints.
-- ✅ **Performance**: Vanilla JS ES modules, no bloat.
+- ✅ **Performance**: Showcase high perf (Lighthouse 95+), lazy load, vanilla JS ES modules optimizations, no bloat.
+
 - ✅ **Components**: Navbar sticky, WhatsApp fallback, section observers.
 
 ![Hero Section Preview](assets/images/demo.png)
@@ -79,14 +80,12 @@ Website runs **zero dependencies**! Fully responsive on all devices.
 
 [MIT License](LICENSE) - Free to use & modify!
 
-## 👨‍💼 Contact
+## 👨‍💼 Contact Me
 
-- WhatsApp: [Chat Now](https://wa.me/628xxxxxx)
-- Email: info@rubahwarna.com
+- Email: udenbaguselord@gmail.com
 
 **Made with ❤️ for Indonesian businesses. Transform your space today!** 🏠✨
 
 ---
 
 _Last updated: March 2026_
-
