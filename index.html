@@ -18,29 +18,168 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Google Fonts - Optimized -->
+  <!-- Google Fonts - Optimized with font-display: swap -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Critical CSS inlined for faster FCP -->
+  <style>
+    /* Critical above-the-fold styles */
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", sans-serif;
+      background: radial-gradient(circle at top, var(--bg-1), var(--bg-2) 45%, var(--bg-3) 100%);
+      color: var(--ink);
+      line-height: 1.6
+    }
+
+    .hero {
+      padding: clamp(24px, 3vw, 48px) 0 clamp(72px, 6vw, 120px);
+      position: relative;
+      overflow: hidden
+    }
+
+    .container {
+      width: min(1140px, 90%);
+      margin: 0 auto
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 56px;
+      align-items: center
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 2vw+1.8rem, 3.4rem);
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      margin: 0 0 12px;
+      line-height: 1.15
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      max-width: 540px
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--forest);
+      margin-bottom: 12px
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: clamp(50px, 4vw, 60px);
+      margin: 32px 0 40px;
+      flex-wrap: wrap;
+      justify-content: center
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      cursor: pointer
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap
+    }
+
+    .hero-stats div {
+      background: color-mix(in srgb, var(--card) 80%, transparent);
+      border: 3px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 16px;
+      min-width: 140px
+    }
+
+    .hero-stats h3 {
+      margin-bottom: 6px;
+      font-size: 1.4rem
+    }
+
+    .hero-stats p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: color-mix(in srgb, var(--ink) 70%, transparent)
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s ease, transform 0.6s ease
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    @media(max-width:720px) {
+      .hero {
+        padding: 20px 0 40px !important
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 18px
+      }
+
+      .hero-stats>div:last-child {
+        grid-column: 1/-1;
+        justify-self: center;
+        width: min(260px, 100%)
+      }
+
+      .bg-orbit {
+        display: none !important
+      }
+    }
+  </style>
+
+  <!-- Bootstrap Icons - Deferred for non-critical loading -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  </noscript>
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Mobile optimizations (only loaded on mobile) -->
   <link rel="stylesheet" href="assets/css/mobile-optimizations.css" media="(max-width: 720px)">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
-    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
-    integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css"
-    integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome - Deferred loading -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
 
-  <!-- Preload critical CSS for mobile -->
-  <link rel="preload" href="assets/css/style.css" as="style" />
+  <!-- Noscript fallback for Font Awesome -->
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+  </noscript>
+
+  <!-- Preload critical JS -->
+  <link rel="modulepreload" href="assets/js/main.js" />
+  <link rel="modulepreload" href="assets/js/utils/load-includes.js" />
 
 </head>
 
@@ -59,6 +198,33 @@
   </main>
 
   <div data-include="partials/footer.html"></div>
+
+  <!-- Load Font Awesome after page interactive -->
+  <script>
+    // Load Font Awesome after LCP (Largest Contentful Paint)
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        document.querySelectorAll('link[as="style"][onload]').forEach(link => {
+          if (link.href.includes('font-awesome') || link.href.includes('bootstrap-icons')) {
+            link.onload = null;
+            link.rel = 'stylesheet';
+          }
+        });
+      }, { timeout: 3000 });
+    } else {
+      // Fallback for browsers without requestIdleCallback
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.querySelectorAll('link[as="style"][onload]').forEach(link => {
+            if (link.href.includes('font-awesome') || link.href.includes('bootstrap-icons')) {
+              link.onload = null;
+              link.rel = 'stylesheet';
+            }
+          });
+        }, 1000);
+      });
+    }
+  </script>
 
   <script type="module" src="assets/js/main.js"></script>
 </body>

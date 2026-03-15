@@ -5,6 +5,7 @@ import { initHeaderScroll } from "./components/header-scroll.js";
 import { initSectionObserver } from "./observers/section-observer.js";
 import { initRevealObserver } from "./observers/reveal-observer.js";
 import { initWhatsappFallback } from "./components/whatsapp-fallback.js";
+import { initLazyLoadImages } from "./utils/lazy-load-images.js";
 
 const isMobile = typeof window !== "undefined" && window.innerWidth <= 720;
 
@@ -21,6 +22,7 @@ const initUI = () => {
         initHeaderScroll();
         initSectionObserver();
         initWhatsappFallback();
+        initLazyLoadImages();
       },
       { timeout: 2000 },
     );

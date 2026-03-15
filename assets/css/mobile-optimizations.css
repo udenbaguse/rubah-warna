@@ -219,7 +219,16 @@ img {
 }
 
 /* Reduce icon animation */
-.fa-beat {
+.fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-blink,
+.fa-flip,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse,
+.fa-spin-reverse {
   animation: none !important;
 }
 
@@ -276,10 +285,19 @@ img {
   padding: 8px 10px !important;
 }
 
-/* Optimize brand text animation */
+/* Optimize brand text animation - KEEP ANIMATION BUT REDUCE COMPLEXITY */
 .brand-text {
-  animation: none !important;
-  background-position: 0% 50% !important;
+  /* Animation kept for mobile visual consistency */
+  background-size: 200%;
+  background-position: 0% 50%;
+  /* Use steps() for better mobile performance than smooth animation */
+  animation: brandTextShift 2s steps(5) infinite;
+}
+
+@keyframes brandTextShift {
+  to {
+    background-position: 200%;
+  }
 }
 
 /* Reduce nav padding */
@@ -290,4 +308,75 @@ img {
 /* Optimize scroll behavior */
 html {
   scroll-behavior: auto !important;
+}
+
+/* ============================================
+   ICON OPTIMIZATIONS FOR MOBILE
+   Hide non-critical icons on mobile
+   ============================================ */
+
+/* Hide decorative icons on mobile */
+.eyebrow i.bi,
+.section-head i {
+  display: none !important;
+}
+
+/* Reduce icon size on mobile */
+.fa-2x {
+  font-size: 1.5rem !important;
+}
+
+.fa-3x {
+  font-size: 2rem !important;
+}
+
+/* ============================================
+   LAZY LOADING OPTIMIZATIONS
+   ============================================ */
+
+/* Defer non-critical images */
+.portfolio-image {
+  background-image: none !important;
+  min-height: 140px;
+}
+
+/* Show placeholder background */
+.img-1 {
+  background: linear-gradient(135deg, var(--bg-2), var(--bg-3)) !important;
+}
+
+.img-2 {
+  background: linear-gradient(135deg, var(--bg-3), var(--bg-2)) !important;
+}
+
+.img-3 {
+  background: linear-gradient(135deg, var(--bg-2), var(--bg-1)) !important;
+}
+
+/* ============================================
+   FONT OPTIMIZATIONS
+   ============================================ */
+
+/* Use system fonts fallback for faster render */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "IBM Plex Sans", sans-serif !important;
+}
+
+/* ============================================
+   BATTERY SAVER MODE
+   Additional optimizations for low power
+   ============================================ */
+
+@media (prefers-reduced-power: reduce) {
+
+  .hero::before,
+  .hero::after,
+  .services::before,
+  .services::after {
+    display: none !important;
+  }
+
+  * {
+    transition: none !important;
+  }
 }
