@@ -22,7 +22,8 @@
 .portfolio-card,
 .hero-card,
 .team-card,
-.contact-map {
+.contact-map,
+.process .steps {
   box-shadow: 0 4px 12px rgba(29, 31, 36, 0.1) !important;
 }
 
@@ -101,4 +102,192 @@
 .team-photo {
   width: 72px !important;
   height: 72px !important;
+}
+
+/* ============================================
+   ADDITIONAL MOBILE PERFORMANCE
+   ============================================ */
+
+/* Disable bg-orbit on mobile (heavy blur effect) */
+.bg-orbit {
+  display: none !important;
+}
+
+/* Reduce gradient complexity */
+body {
+  background: var(--bg-1) !important;
+}
+
+.services,
+.testimonials,
+.team,
+.contact {
+  background: var(--bg-1) !important;
+}
+
+/* Simplify process section */
+.process::before {
+  display: none !important;
+}
+
+/* Reduce card padding on mobile */
+.card,
+.step {
+  padding: 16px 18px !important;
+}
+
+/* Smaller border radius on mobile for faster paint */
+.hero-card,
+.portfolio-card,
+.team-card,
+.card {
+  border-radius: 16px !important;
+}
+
+/* Optimize image rendering */
+img {
+  content-visibility: auto;
+}
+
+/* Reduce navbar complexity */
+.brand-mark {
+  box-shadow: none !important;
+}
+
+/* Simplify nav-links on mobile */
+.nav-links {
+  background: var(--card) !important;
+}
+
+/* Reduce text shadow on mobile */
+.hero .hero-copy h1 {
+  text-shadow: none !important;
+}
+
+/* Optimize reveal animations - show immediately */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Reduce service card decorations */
+#layanan .card::after {
+  display: none !important;
+}
+
+/* Simplify team card gradient */
+.team-photo {
+  background: var(--sage) !important;
+}
+
+.team-photo.alt {
+  background: var(--clay) !important;
+}
+
+/* Reduce portfolio image height on mobile */
+.portfolio-image {
+  height: 140px !important;
+}
+
+/* Smaller stats on mobile */
+.hero .hero-stats h3 {
+  font-size: 1.1rem !important;
+}
+
+.hero .hero-stats p {
+  font-size: 0.8rem !important;
+}
+
+/* Reduce hero h1 size on mobile */
+.hero .hero-copy h1 {
+  font-size: 2rem !important;
+}
+
+/* Optimize footer */
+.footer {
+  padding: 30px 0 20px !important;
+}
+
+/* ============================================
+   EXTREME MOBILE OPTIMIZATIONS
+   ============================================ */
+
+/* Disable content-visibility animation cost */
+.reveal.show {
+  will-change: auto !important;
+}
+
+/* Reduce icon animation */
+.fa-beat {
+  animation: none !important;
+}
+
+/* Simplify hero card border */
+.hero-card {
+  border: 1px solid var(--border) !important;
+}
+
+/* Reduce eyebrow padding */
+.eyebrow {
+  padding: 4px 8px !important;
+}
+
+/* Optimize section head */
+.section-head {
+  margin-bottom: 24px !important;
+}
+
+/* Reduce card gap on mobile */
+.card-grid,
+.portfolio-grid,
+.testimonial-grid,
+.team-grid {
+  gap: 16px !important;
+}
+
+/* Optimize contact section */
+.contact-info {
+  gap: 10px !important;
+  margin-top: 12px !important;
+}
+
+/* Reduce map size on mobile */
+.contact-map img {
+  height: 180px !important;
+  object-fit: cover;
+}
+
+/* Optimize process steps */
+.process-grid {
+  gap: 16px !important;
+}
+
+.steps {
+  gap: 12px !important;
+}
+
+/* Reduce hero stats gap */
+.hero .hero-stats {
+  gap: 10px !important;
+}
+
+.hero .hero-stats>div {
+  padding: 8px 10px !important;
+}
+
+/* Optimize brand text animation */
+.brand-text {
+  animation: none !important;
+  background-position: 0% 50% !important;
+}
+
+/* Reduce nav padding */
+.nav {
+  padding-block: 0.8rem !important;
+}
+
+/* Optimize scroll behavior */
+html {
+  scroll-behavior: auto !important;
 }
