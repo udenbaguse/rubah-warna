@@ -1,0 +1,104 @@
+/* ============================================
+   MOBILE PERFORMANCE OPTIMIZATIONS
+   Hanya diterapkan di layar ≤720px
+   ============================================ */
+
+/* Reduce backdrop-filter on mobile */
+.site-header {
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  background: var(--bg-2) !important;
+}
+
+.nav-links {
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* Reduce shadow complexity on mobile */
+.step,
+.card,
+.testimonial,
+.portfolio-card,
+.hero-card,
+.team-card,
+.contact-map {
+  box-shadow: 0 4px 12px rgba(29, 31, 36, 0.1) !important;
+}
+
+.step:hover,
+.card:hover,
+.testimonial:hover,
+.portfolio-card:hover,
+.hero-card:hover,
+.team-card:hover {
+  box-shadow: 0 8px 24px rgba(29, 31, 36, 0.12) !important;
+}
+
+/* Reduce animation complexity on mobile */
+.hero::before,
+.hero::after,
+.services::before,
+.services::after {
+  animation: none !important;
+}
+
+/* Disable hover transforms on touch devices */
+.step:hover,
+.card:hover,
+.testimonial:hover,
+.portfolio-card:hover,
+.hero-card:hover,
+.team-card:hover,
+.process .process-text:hover,
+.process .process-visual img:hover {
+  transform: none !important;
+}
+
+/* Reduce button shadow on mobile */
+.btn {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+  transform: none !important;
+}
+
+/* Smaller hero padding on mobile */
+.hero {
+  padding: 20px 0 40px !important;
+}
+
+.hero .hero-card {
+  padding: 20px !important;
+}
+
+.hero .hero-actions {
+  gap: 16px !important;
+  margin: 20px 0 28px !important;
+}
+
+.hero .hero-whatsapp {
+  width: 42px !important;
+  height: 42px !important;
+}
+
+.hero .hero-whatsapp i {
+  font-size: 2rem !important;
+}
+
+/* Reduce section padding on mobile */
+.section {
+  padding: 40px 0 !important;
+}
+
+/* Smaller team card on mobile */
+.team-card {
+  padding: 20px !important;
+}
+
+.team-photo {
+  width: 72px !important;
+  height: 72px !important;
+}
