@@ -11,15 +11,15 @@ export const initLazyLoadImages = () => {
   const imageConfigs = [
     {
       selector: ".img-1",
-      url: "assets/images/projects/project-1.png",
+      url: "assets/images/projects/project-1.jpeg",
     },
     {
       selector: ".img-2",
-      url: "assets/images/projects/project-2.png",
+      url: "assets/images/projects/project-2.jpeg",
     },
     {
       selector: ".img-3",
-      url: "assets/images/projects/project-3.png",
+      url: "assets/images/projects/project-3.jpeg",
     },
   ];
 

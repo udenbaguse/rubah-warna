@@ -227,7 +227,10 @@ img {
 
 /* Reduce portfolio image height on mobile */
 .portfolio-image {
-  height: 140px !important;
+  height: 200px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 /* Smaller stats on mobile */
